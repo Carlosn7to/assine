@@ -45,7 +45,7 @@
           agora mesmo!
         </p>
       </div>
-      <form action="#" @submit.prevent="postLead">
+      <form action="#" @submit.prevent="postLead" name="assine">
           <span>Quero começar a pagar <br> Internet só em 2023</span>
           <div class="inputs">
             <input type="text" name="name" id="name" placeholder="Nome" autocomplete="off" required v-model="payload.name">
