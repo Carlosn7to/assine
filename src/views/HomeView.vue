@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <section :style="{ backgroundImage: 'url(' + require('@/assets/background/items/black_texture.png') + ')' }">
-      <h1>Assine internet <br> 100% fibra <b>e pague <br> só em 2023</b></h1>
+      <h1>Assine internet 100% fibra <b>e pague só em 2023</b></h1>
       <figure>
         <img :src="require('../assets/background/items/black_fibra.png')" alt="homem_comemorando">
       </figure>
@@ -40,9 +40,8 @@
     <section :style="{ backgroundImage: 'url(' + require('@/assets/background/items/banner_2.png') + ')' }">
       <div class="description">
         <p>
-          Escolha o plano de <br> Internet que mais <br> combina com o seu <br> estilo de vida e tenha <br>
+          Escolha o plano de Internet que mais combina com o seu estilo de vida e tenha
           <b>ULTRAVELOCIDADE</b>
-          <br>
           agora mesmo!
         </p>
       </div>
@@ -249,8 +248,7 @@ export default {
   }
 
   section:nth-child(2) {
-    height: 50vh;
-    background-position-x: 26vw;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
@@ -273,13 +271,12 @@ export default {
     form {
       position: relative;
       top: -3rem;
-      width: 23vw;
       background-color:  #EF8600;
       border-radius: 15px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 3vh 0vw;
+      padding: 2vh 3vw;
       gap: 2vh;
 
       span {
@@ -380,22 +377,708 @@ export default {
   }
 }
 
-@media (max-width: 1920px) {
+@media (min-width: 360px) {
+  .container {
+    padding: 5% 0 0 0;
+
+    section:nth-child(1) {
+      padding: 0 10%;
+
+      h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+
+      }
+
+      figure {
+        img {
+          width: 80vw;
+          top: 0;
+        }
+      }
+
+      .plans {
+        top: 0;
+
+        .plan {
+
+          img {
+            width: 90vw;
+          }
+
+          a {
+            width: 70%;
+            border-radius: 7px;
+            padding: .5vh 0;
+            font-size: 1.6rem;
+          }
+        }
+
+      }
+
+      .benefits {
+        span {
+          text-align: center;
+        }
+
+        .items {
+          gap: 1vh;
+          .item {
+
+
+            img {
+              width: 20vw;
+            }
+          }
+        }
+      }
+    }
+
+    section:nth-child(2) {
+      flex-direction: column;
+      gap: 8vh;
+      background-image: none !important;
+      .description {
+        padding: 0 10%;
+
+        p {
+          text-align: center;
+          font-size: 1.5rem;
+        }
+      }
+
+      form {
+        span {
+          font-size: 1.4rem;
+        }
+
+        .inputs {
+          input[type=text] {
+            padding: 5px 10px;
+            height: 5vh;
+          }
+        }
+
+        input[type=submit] {
+          height: 5vh;
+        }
+      }
+
+
+    }
+
+    footer {
+      padding: 5% 5%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right;
+
+      .content-footer {
+
+
+        h3 {
+          font-size: 1.2rem;
+        }
+
+        .socials {
+          gap: 1vh ;
+          a {
+
+
+            img {
+
+              width: 8vw;
+            }
+          }
+        }
+
+        p {
+          font-size: .6rem;
+        }
+
+      }
+
+      .logo {
+        width: 80%;
+        img {
+          width: 30vw;
+        }
+
+        span {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 460px) {
+  .container {
+
+    footer {
+      .content-footer {
+        h3 {
+          font-size: 1.6rem;
+        }
+
+        .socials {
+          gap: 1vh ;
+          a {
+
+
+            img {
+
+              width: 5vw;
+            }
+          }
+        }
+
+        p {
+          font-size: .8rem;
+        }
+
+      }
+
+      .logo {
+        width: 80%;
+        img {
+          width: 45vw;
+        }
+
+        span {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 700px) {
+  .container {
+
+    section:nth-child(1) {
+
+      figure {
+        img {
+          width: 50vw;
+        }
+      }
+
+      .plans {
+
+        .plan {
+          img {
+            width: 70vw;
+          }
+        }
+      }
+
+      .benefits {
+        margin-top: 4vh;
+
+        .items {
+
+          .item {
+
+            img {
+              width: 15vw;
+            }
+          }
+        }
+      }
+    }
+
+    section:nth-child(2) {
+
+      .description {
+        padding: 0 25%;
+      }
+    }
+
+    footer {
+      .content-footer {
+        h3 {
+          font-size: 1.8rem;
+        }
+
+        .socials {
+          gap: 1vh ;
+          a {
+
+
+            img {
+
+              width: 5vw;
+            }
+          }
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+      }
+
+      .logo {
+        width: 80%;
+        img {
+          width: 35vw;
+        }
+
+        span {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 900px) {
   .container {
 
     section:nth-child(1) {
 
       h1 {
-        font-size: 4rem;
-        line-height: 4rem;
+        width: 60%;
+        text-align: left;
+      }
+
+      figure {
+        img {
+          width: 50vw;
+        }
+      }
+
+      .plans {
+
+        .plan {
+          img {
+            width: 65vw;
+          }
+        }
+      }
+
+      .benefits {
+        margin-top: 4vh;
+
+        .items {
+
+          .item {
+
+            img {
+              width: 15vw;
+            }
+          }
+        }
+      }
+    }
+
+    section:nth-child(2) {
+
+      .description {
+        padding: 0 25%;
+      }
+    }
+
+    footer {
+      .content-footer {
+        h3 {
+          font-size: 1.8rem;
+        }
+
+        .socials {
+          gap: 1vh ;
+          a {
+
+
+            img {
+
+              width: 3.5vw;
+            }
+          }
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+      }
+
+      .logo {
+        width: 80%;
+        img {
+          width: 35vw;
+        }
+
+        span {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1100px) {
+  .container {
+
+    section:nth-child(1) {
+      padding: 0% 20%;
+
+
+      h1 {
+        width: 60%;
+        text-align: left;
+      }
+
+      figure {
+        img {
+          width: 50vw;
+          top: -5vh;
+        }
+      }
+
+      .plans {
+        top: -5vh;
+
+        .plan {
+          img {
+            width: 50vw;
+          }
+        }
+      }
+
+      .benefits {
+
+        .items {
+          gap: 2vh;
+
+          .item {
+
+            img {
+              width: 12vw;
+            }
+          }
+        }
+      }
+    }
+
+    section:nth-child(2) {
+      flex-direction: row;
+      padding: 0 15%;
+
+      .description {
+        width: 30%;
+        padding: 0;
       }
 
 
+    }
+
+    footer {
+
+      .content-footer {
+        h3 {
+          font-size: 1.8rem;
+        }
+
+        .socials {
+          gap: 1vh ;
+          a {
 
 
+            img {
+
+              width: 3vw;
+            }
+          }
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+      }
+
+      .logo {
+        width: 40%;
+        img {
+          width: 25vw;
+        }
+
+        span {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #000;
+    background-repeat: repeat;
+    padding: 0;
+
+    section:nth-child(1) {
+      padding: 2% 15%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+
+      h1 {
+        color: #fb7411;
+        font-size: 3.5rem;
+        width: 80%;
+        font-weight: 800;
+        margin-left: 15%;
+        line-height: 3.6rem;
+        width: 30%;
+
+        b {
+          color: #fd341f;
+          font-weight: 800;
+        }
+      }
+
+      figure {
+        margin: 0 auto;
+        img {
+          position: relative;
+          width: 40vw;
+          margin: 0 auto;
+          display: block;
+          top: -5rem;
+
+        }
+      }
+
+      .plans {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5vh;
+        position: relative;
+        top: -5rem;
+
+        .plan {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 3vh;
+
+          img {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+          }
+
+          a {
+            background: #fb7411;
+            padding: .8rem 1.5rem;
+            width: 60%;
+            color: #ffffff;
+            font-size: 2rem;
+            font-weight: 800;
+            border-radius: 18px;
+            border: 1px solid #fb7411;
+            text-align: center;
+            text-decoration: none;
+
+            &:hover {
+              border-color: #359f19;
+              background-color: #359f19;
+              color: #FFFFFF;
+              cursor: pointer;
+              transition: .2s ease;
+            }
+
+            &:active {
+              background-color: #2b7b15;
+              border-color: #2b7b15;
+            }
+          }
+        }
+      }
+
+      .benefits {
+        width: 100%;
+        padding: 2vh 0 10vh 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2vh;
+
+        span {
+          color: #fb7411;
+          font-weight: 800;
+          font-size: 2rem;
+
+        }
+
+        .items {
+          display: flex;
+          align-items: center;
+          gap: 1vw;
+
+          .item {
+            img {
+              width: 7vw;
+            }
+          }
+        }
+      }
+    }
+
+    section:nth-child(2) {
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3vw;
+
+      .description {
+        width: 25%;
+        color: #fb7411;
+        font-weight: 800;
+
+        p {
+        text-align: left;
+        font-size: 2rem;
+        }
+
+        b {
+          color: #fd341f;
+          font-weight: 800;
+
+        }
+      }
+
+      form {
+        position: relative;
+        top: -3rem;
+        background-color:  #EF8600;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5vh 1vw;
+        gap: 2vh;
+        width: 20vw;
+
+        span {
+          font-size: 1.8rem;
+          color: #fff;
+          font-weight: 800;
+          text-align: center;
+        }
+
+        .inputs {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 2vh;
+          input[type=text] {
+            background-color: #ffffff;
+            height: 5vh;
+            border-radius: 5px;
+            padding: 5px 2.5rem;
+            border: none;
+            width: 90%;
+            outline: none;
+
+
+            &:focus {
+              border: none;
+            }
+
+          }
+        }
+
+        input[type=submit] {
+          width: 90%;
+          height: 5vh;
+          border-radius: 5px;
+          border: none;
+          color: #fff;
+          background-color: #EE3A29;
+          transition: .2s ease;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #359f19;
+          }
+        }
+      }
+    }
+
+    footer {
+      width: 100%;
+      background-size: cover;
+      background-repeat: repeat;
+      padding: 5% 15%;
+
+      display: flex;
+      align-items: center;
+      gap: 8vw;
+
+      .content-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        color: #FFFFFF;
+        width: 60%;
+
+        .socials {
+          display: flex;
+          gap: .5vw;
+
+          a {
+            img {
+              width: 2vw;
+            }
+          }
+        }
+
+        h3 {
+          font-size: 2rem;
+          font-weight: 800;
+        }
+
+        p {
+          text-align: justify;
+          font-size: 1.2rem;
+        }
+      }
+
+      .logo {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        gap: 2vh;
+        img {
+          width: 18vw;
+          height: auto;
+        }
+        span {
+          font-size: 1.8rem;
+          color: #fff;
+          font-weight: 800;
+        }
+      }
 
     }
   }
 }
+
 
 </style>
