@@ -26,7 +26,7 @@
             <img :src="require('@/assets/background/items/SELO CLUBE DE VANTAGENS.png')" alt="clube_vantagens">
           </div>
           <div class="item">
-            <img :src="require('@/assets/background/items/SELO HBO MAX.png')" alt="hbo_max">
+            <img :src="require('@/assets/background/items/HBO-MAX.png')" alt="hbo_max">
           </div>
           <div class="item">
             <img :src="require('@/assets/background/items/SELO DEEZER.png')" alt="deezer">
