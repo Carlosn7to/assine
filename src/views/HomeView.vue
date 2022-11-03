@@ -125,7 +125,7 @@ export default {
     postCliques: function (plan) {
       this.plan = plan
       axios({
-        url: 'http://localhost:8000/api/assine/cliques',
+        url: 'https://v1.ageportal.agetelecom.com.br/api/assine/cliques',
         method: 'post',
         data: {
           plan: this.plan
