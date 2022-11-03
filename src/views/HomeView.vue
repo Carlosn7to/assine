@@ -8,15 +8,15 @@
       <div class="plans">
         <div class="plan">
           <img :src="require('../assets/background/items/480-MB.png')" alt="480mbps">
-          <a target="_blank" href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+480Mb+e+s%C3%B3+pagar+em+2023!">Quero 480Mb</a>
+          <a target="_blank" @click="postCliques('480Mbps')" href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+480Mb+e+s%C3%B3+pagar+em+2023!">Quero 480Mb</a>
         </div>
         <div class="plan">
           <img :src="require('../assets/background/items/740-MB.png')" alt="740mbps">
-          <a target="_blank" href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+740Mb+e+s%C3%B3+pagar+em+2023!">Quero 740Mb</a>
+          <a target="_blank" @click="postCliques('740Mbps')" href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+740Mb+e+s%C3%B3+pagar+em+2023!">Quero 740Mb</a>
         </div>
         <div class="plan">
           <img :src="require('../assets/background/items/1GB-MAX.png')" alt="1Gbps">
-          <a target="_blank" href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+1Gb+Max+e+s%C3%B3+pagar+em+2023!">Quero 1Gb MAX</a>
+          <a target="_blank" @click="postCliques('1Gbps')" href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+1Gb+Max+e+s%C3%B3+pagar+em+2023!">Quero 1Gb MAX</a>
         </div>
       </div>
       <div class="benefits">
@@ -105,7 +105,8 @@ export default {
         email: '',
         tel: ''
       },
-      msg: null
+      msg: null,
+      plan: ''
     }
   },
   methods: {
@@ -119,6 +120,16 @@ export default {
         this.payload.email = ''
         this.payload.tel = ''
         alert(res.data.msg)
+      })
+    },
+    postCliques: function (plan) {
+      this.plan = plan
+      axios({
+        url: 'http://localhost:8000/api/assine/cliques',
+        method: 'post',
+        data: {
+          plan: this.plan
+        }
       })
     }
   }
