@@ -7,15 +7,15 @@
       </figure>
       <div class="plans">
         <div class="plan">
-          <img :src="require('../assets/background/items/89,50.png')" alt="480mbps">
+          <img :src="require('../assets/background/items/480-MB.png')" alt="480mbps">
           <a target="_blank" href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+480Mb+e+s%C3%B3+pagar+em+2023!">Quero 480Mb</a>
         </div>
         <div class="plan">
-          <img :src="require('../assets/background/items/99,50.png')" alt="740mbps">
+          <img :src="require('../assets/background/items/740-MB.png')" alt="740mbps">
           <a target="_blank" href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+740Mb+e+s%C3%B3+pagar+em+2023!">Quero 740Mb</a>
         </div>
         <div class="plan">
-          <img :src="require('../assets/background/items/159,50.png')" alt="1Gbps">
+          <img :src="require('../assets/background/items/1GB-MAX.png')" alt="1Gbps">
           <a target="_blank" href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+1Gb+Max+e+s%C3%B3+pagar+em+2023!">Quero 1Gb MAX</a>
         </div>
       </div>
@@ -60,16 +60,16 @@
         <h3>Conheça outras ofertas <br> em nossas redes</h3>
         <div class="socials">
           <a href="https://www.instagram.com/agetelecom/" target="_blank">
-            <img :src="require('@/assets/background/items/INSTAGRAM.png')" alt="icone_instagram">
+            <img :src="require('@/assets/background/items/REDES SOCIAIS_INSTAGRAM.svg')" alt="icone_instagram">
           </a>
           <a href="https://www.facebook.com/AgeTelecom" target="_blank">
-            <img :src="require('@/assets/background/items/FACEBOOK.png')" alt="icone_facebook">
+            <img :src="require('@/assets/background/items/REDES SOCIAIS_FACE.svg')" alt="icone_facebook">
           </a>
           <a href="https://www.youtube.com/channel/UC10V9FvbHmdJgzf0QyLL9XQ/videos" target="_blank">
-            <img :src="require('@/assets/background/items/YOUTUBE.png')" alt="icone_youtube">
+            <img :src="require('@/assets/background/items/REDES SOCIAIS_YOUTUBE.svg')" alt="icone_youtube">
           </a>
           <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+a+internet+Age+e+s%C3%B3+pagar+em+2023!" target="_blank">
-            <img :src="require('@/assets/background/items/WHATS.png')" alt="icone_whattsapp">
+            <img :src="require('@/assets/background/items/REDES SOCIAIS_WHATSAPP.svg')" alt="icone_whattsapp">
           </a>
         </div>
         <p>
@@ -85,8 +85,7 @@
         </p>
       </div>
       <div class="logo">
-        <a href="https://www.agetelecom.com.br" target="_blank" ><img :src="require('@/assets/background/items/LOGO.png')" alt="logo_age"></a>
-        <span>Conecte-se ao que te faz feliz.</span>
+        <a href="https://www.agetelecom.com.br" target="_blank" ><img :src="require('@/assets/background/items/ASSINATURA.png')" alt="logo_age"></a>
       </div>
     </footer>
   </div>
@@ -345,6 +344,7 @@ export default {
       .socials {
         display: flex;
         gap: .5vw;
+
       }
 
       h3 {
@@ -504,7 +504,7 @@ export default {
       .logo {
         width: 80%;
         img {
-          width: 30vw;
+          width: 45vw;
         }
 
         span {
@@ -623,7 +623,7 @@ export default {
       .logo {
         width: 80%;
         img {
-          width: 35vw;
+          width: 45vw;
         }
 
         span {
@@ -718,7 +718,7 @@ export default {
           margin: 0 auto;
         }
         img {
-          width: 25vw;
+          width: 35vw;
         }
 
         span {
@@ -885,7 +885,7 @@ export default {
           gap: 3vh;
 
           img {
-            width: 100%;
+            width: 60%;
             height: auto;
             margin: 0 auto;
             display: block;
@@ -894,7 +894,7 @@ export default {
           a {
             background: #fb7411;
             padding: .8rem 1.5rem;
-            width: 70%;
+            width: 40%;
             color: #ffffff;
             font-size: 2rem;
             font-weight: 800;
@@ -1056,7 +1056,7 @@ export default {
 
           a {
             img {
-              width: 2vw;
+              width: 3vw;
             }
           }
         }
@@ -1078,7 +1078,7 @@ export default {
         width: 40%;
         gap: 2vh;
         img {
-          width: 18vw;
+          width: 25vw;
           height: auto;
         }
         span {

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="ELEMENTS" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 155.67 152">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#drop-shadow-3);
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        filter: url(#drop-shadow-2);
+      }
+
+      .cls-3 {
+        filter: url(#drop-shadow-1);
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="7"/>
+      <feGaussianBlur result="blur" stdDeviation="0"/>
+      <feFlood flood-color="#000" flood-opacity="0"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-2" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="7"/>
+      <feGaussianBlur result="blur-2" stdDeviation="0"/>
+      <feFlood flood-color="#000" flood-opacity="0"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-3" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="7"/>
+      <feGaussianBlur result="blur-3" stdDeviation="0"/>
+      <feFlood flood-color="#000" flood-opacity="0"/>
+      <feComposite in2="blur-3" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path class="cls-3" d="M75.17,62.55c-6.62,0-12,5.38-12,12s5.38,12,12,12,12-5.38,12-12-5.38-12-12-12Z"/>
+  <path class="cls-2" d="M90.05,43.67h-30.38c-8.66,0-15.7,7.04-15.7,15.7v30.38c0,8.66,7.04,15.7,15.7,15.7h30.38c8.66,0,15.7-7.04,15.7-15.7v-30.38c0-8.66-7.04-15.7-15.7-15.7Zm-14.88,49.62c-10.33,0-18.74-8.41-18.74-18.74s8.41-18.74,18.74-18.74,18.74,8.41,18.74,18.74-8.41,18.74-18.74,18.74Zm19.83-34.28c-2.46,0-4.46-2-4.46-4.46s2-4.46,4.46-4.46,4.46,2,4.46,4.46-2,4.46-4.46,4.46Z"/>
+  <path class="cls-1" d="M74.86,9.75C39.02,9.75,9.96,38.8,9.96,74.64s29.05,64.89,64.89,64.89,64.89-29.05,64.89-64.89S110.7,9.75,74.86,9.75Zm38.04,79.99c0,12.6-10.25,22.85-22.86,22.85h-30.38c-12.6,0-22.85-10.25-22.85-22.85v-30.38c0-12.6,10.25-22.85,22.85-22.85h30.38c12.6,0,22.86,10.25,22.86,22.85v30.38Z"/>
+</svg>
