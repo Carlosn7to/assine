@@ -37,7 +37,7 @@
         </div>
       </div>
     </section>
-    <section :style="{ backgroundImage: 'url(' + require('@/assets/background/items/banner_2.png') + ')' }">
+    <section>
       <div class="description">
         <p>
           Escolha o plano de Internet que mais combina com o seu estilo de vida e tenha
@@ -149,10 +149,10 @@ export default {
     h1 {
       color: #fb7411;
       font-size: 3.5rem;
-      width: 80%;
       font-weight: 800;
       margin-left: 15%;
       line-height: 3.6rem;
+      text-align: center;
 
       b {
         color: #fd341f;
@@ -640,7 +640,8 @@ export default {
 
       h1 {
         width: 60%;
-        text-align: left;
+        margin: 0 auto;
+        text-align: center;
       }
 
       figure {
@@ -681,7 +682,9 @@ export default {
     }
 
     footer {
+
       .content-footer {
+        width: 80%;
         h3 {
           font-size: 1.8rem;
         }
@@ -706,8 +709,16 @@ export default {
 
       .logo {
         width: 80%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        a {
+          display: block;
+          margin: 0 auto;
+        }
         img {
-          width: 35vw;
+          width: 25vw;
         }
 
         span {
@@ -821,7 +832,7 @@ export default {
     padding: 0;
 
     section:nth-child(1) {
-      padding: 2% 15%;
+      padding: 2% 15% 0 15%;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -831,11 +842,12 @@ export default {
       h1 {
         color: #fb7411;
         font-size: 3.5rem;
-        width: 80%;
-        font-weight: 800;
-        margin-left: 15%;
-        line-height: 3.6rem;
         width: 30%;
+        font-weight: 800;
+        margin: 0 auto;
+        line-height: 3.6rem;
+        text-align: center;
+
 
         b {
           color: #fd341f;
@@ -850,7 +862,7 @@ export default {
           width: 40vw;
           margin: 0 auto;
           display: block;
-          top: -5rem;
+          top: -2rem;
 
         }
       }
@@ -863,7 +875,7 @@ export default {
         flex-direction: column;
         gap: 5vh;
         position: relative;
-        top: -5rem;
+        top: -2rem;
 
         .plan {
           display: flex;
@@ -882,11 +894,11 @@ export default {
           a {
             background: #fb7411;
             padding: .8rem 1.5rem;
-            width: 60%;
+            width: 70%;
             color: #ffffff;
             font-size: 2rem;
             font-weight: 800;
-            border-radius: 18px;
+            border-radius: 10px;
             border: 1px solid #fb7411;
             text-align: center;
             text-decoration: none;
@@ -909,7 +921,7 @@ export default {
 
       .benefits {
         width: 100%;
-        padding: 2vh 0 10vh 0;
+        padding: 2vh 0 7vh 0;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -946,7 +958,7 @@ export default {
       gap: 3vw;
 
       .description {
-        width: 25%;
+        width: 20%;
         color: #fb7411;
         font-weight: 800;
 
@@ -1025,7 +1037,7 @@ export default {
       width: 100%;
       background-size: cover;
       background-repeat: repeat;
-      padding: 5% 15%;
+      padding: 2% 15%;
 
       display: flex;
       align-items: center;
